@@ -4,9 +4,12 @@ import { _throttle } from "../utils/throttle";
 import { CSSTransition } from "react-transition-group";
 
 import "./style.css";
+import "./transitions.css";
 
 const StickyHeader = memo(({ children, triggerOn }) => {
   const [showFixedMenu, setShowFixedMenu] = useState(false);
+  const [hideTopMenu, setHideTopMenu] = useState(false);
+  const [scrollPassedTheOffset, setScrollPassedTheOffset] = useState(false);
 
   const handleScroll = () => {
     let scrollTop = window.scrollY;
@@ -26,59 +29,29 @@ const StickyHeader = memo(({ children, triggerOn }) => {
 
   return (
     <header className="react-stiky-header">
-      <div className="react-stiky-header__container">
-        <CSSTransition
-          in={showFixedMenu}
-          timeout={{
-            enter: 1000,
-            exit: 1000,
-          }}
-          classNames="height"
-        >
-          <div className="scrollableSapce">
-            <div className="fullMenuWrapper">
-              <CSSTransition
-                in={!showFixedMenu}
-                timeout={{
-                  enter: 1000,
-                  exit: 1000,
-                }}
-                classNames="fade-new"
-              >
-                <div>dsas</div>
-              </CSSTransition>
-              <CSSTransition
-                in={!showFixedMenu}
-                timeout={{
-                  enter: 600,
-                  exit: 300,
-                }}
-                classNames="point"
-              >
-                <div>dsas</div>
-              </CSSTransition>
-              <CSSTransition
-                in={!showFixedMenu}
-                timeout={{
-                  enter: 1000,
-                  exit: 1000,
-                }}
-                classNames="fade-new"
-              >
-                <div className="actionButtonWrapper"></div>
-              </CSSTransition>
-            </div>
+      <CSSTransition
+        in={showFixedMenu}
+        timeout={600}
+        classNames="react-sticky-fade__main_menu"
+      >
+        <div className="scrollable-space">
+          <div className="main-menu menu__container">
+            <div>first Menu</div>
           </div>
-        </CSSTransition>
-      </div>
+
+          <div className="fixed-menu menu__container">
+            <div>second Menu</div>
+          </div>
+        </div>
+      </CSSTransition>
     </header>
   );
 });
 StickyHeader.defaultProps = {
   triggerOn: 300,
 };
-StickyHeader.PropTypes = {
+StickyHeader.propTypes = {
   optionalElement: PropTypes.element,
-  triggerOn: PropTypes.bool,
+  triggerOn: PropTypes.number,
 };
 export default StickyHeader;

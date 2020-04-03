@@ -5,15 +5,27 @@
 }
 
 .react-stiky-header__container {
-
 }
 
-.backButtonWrapper {
-  
+.main-menu.menu__container {
+  /* background-color: white;
+  box-shadow: 1px 1px 8px 4px gainsboro;
+ */
+  padding: 16px 16px;
+  border-bottom: 1px solid red
 }
 
-.scrollableSapce {
+.fixed-menu.menu__container {
+  /* background-color: white;
+  box-shadow: 1px 1px 8px 4px gainsboro;
+*/
+  padding: 16px 16px;
+}
 
+.scrollable-space {
+  background-color: white;
+  box-shadow: 1px 1px 8px 4px gainsboro;
+  padding: 16px 16px;
 }
 
 .contentOverlay {
@@ -25,5 +37,4 @@
 }
 
 .fullMenuWrapper {
- 
 }

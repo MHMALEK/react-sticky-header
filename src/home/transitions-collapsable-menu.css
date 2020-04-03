@@ -1,58 +1,58 @@
 /* main menu */
 
 .react-sticky-fade__main_menu--enter {
-  transform: translateY(-100px)!important;
+  opacity: 0;
   transition: all 300ms ease-in;
 }
 .react-sticky-fade__main_menu-enter-active {
-  transform: translateY(0px)!important;
+  opacity: 1;
   transition: all 300ms ease-in;
 }
 .react-sticky-fade__main_menu-enter-done {
-  transform: translateY(0px)!important;
+  opacity: 1;
   transition: all 300ms ease-in;
 }
 
 .react-sticky-fade__main_menu-exit {
-  transform: translateY(0px)!important;
+  opacity: 1;
   transition: all 300ms;
 }
 .react-sticky-fade__main_menu-exit-active {
-  transform: translateY(-100px)!important;
+  opacity: 0;
   transition: all 300ms;
 }
 
 .react-sticky-fade__main_menu-exit-done {
-  transform: translateY(-100px)!important;
+  opacity: 0;
   transition: all 300ms;
 }
 
 /* fixed menu */
 
 .react-sticky-fade__fixed_menu--enter {
-  transform: translateY(-100px)!important;
-  transition: all 600ms;
+  transform: translateY(-100px);
+  transition: all 0.3s;
 }
 .react-sticky-fade__fixed_menu-enter-active {
-  transform: translateY(-100px)!important;
-  transition: all 600ms;
+  transform: translateY(-100px);
+  transition: all 0.3s;
 }
 .react-sticky-fade__fixed_menu-enter-done {
-  transform: translateY(0px)!important;
+  transform: translateY(0px);
   transition: all 600ms ease-in;
 }
 
 .react-sticky-fade__fixed_menu-exit {
-  transform: translateY(-100px)!important;
-  transition: all 600ms;
+  transform: translateY(-100px);
+  transition: all 300ms;
 }
 .react-sticky-fade__fixed_menu-exit-active {
-  transform: translateY(-100px)!important;
-  transition: all 600ms;
+  transform: translateY(0px);
+  transition: all 300ms;
 }
 
 .react-sticky-fade__fixed_menu-exit-done {
-  transform: translateY(-100px)!important;
+  transform: translateY(0px);
   transition: all 600ms ease-in;
 }
 
