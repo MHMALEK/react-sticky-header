@@ -1,0 +1,84 @@
+
+.height-enter {
+  transform: translateY(-100px);
+  transition: all 300ms ease-in;
+}
+.height-enter-active {
+  transform: translateY(-100px);
+  transition: all 300ms ease-in;
+}
+.height-enter-done {
+  transform: translateY(-100px);
+  transition: all 300ms ease-in;
+}
+
+.height-exit {
+  transform: skewY(1);
+  transition: all 300ms;
+}
+.height-exit-active {
+  transform: skewY(1);
+  transition: all 300ms;
+}
+
+.height-exit-done {
+  transform: skewY(1);
+  transition: all 300ms;
+}
+
+.point-enter {
+  opacity: 0;
+  transform: translateY(0px);
+  transition: all 300ms ease-in;
+}
+.point-enter-active {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 300ms ease-in;
+}
+.point-enter-done {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: all 300ms ease-in;
+}
+
+.point-exit {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 300ms;
+}
+.point-exit-active {
+  transform: translateY(50px);
+  transition: all 300ms;
+}
+
+.point-exit-done {
+  opacity: 1;
+  transform: translateY(50px);
+  transition: all 300ms;
+}
+
+.fade-new-enter {
+  opacity: 0;
+  transition-delay: 2s;
+  transition: opacity 300ms;
+}
+.fade-new-enter-active {
+  opacity: 1;
+  transition-delay: 2s;
+  transition: opacity 300ms;
+}
+.fade-new-exit {
+  opacity: 1;
+  transition-delay: 2s;
+  transition: opacity 300ms;
+}
+.fade-new-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.fade-new-exit-done {
+  opacity: 0;
+  transition: opacity 300ms;
+}

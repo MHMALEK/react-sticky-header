@@ -1,0 +1,29 @@
+.react-stiky-header {
+  position: sticky;
+  top: 0;
+  z-index: 100000;
+}
+
+.react-stiky-header__container {
+
+}
+
+.backButtonWrapper {
+  
+}
+
+.scrollableSapce {
+
+}
+
+.contentOverlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.fullMenuWrapper {
+ 
+}
